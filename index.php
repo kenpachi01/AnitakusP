@@ -22,12 +22,14 @@
                 <h2>Login</h2>
                 E-mail<br>
                 <br><input type="text" name="email" placeholder="Digite se e-mail"><br>
+                
                 <br>Senha<br>
                 <br><input type="password" name="senha" placeholder="Senha" maxlength="8"><br>
-                <h2><br> <input type="submit" name="enviar" value="Logar"><br></h2>
+                
+                     <h2><br> <input type="submit" name="enviar" value="Logar"><br></h2>
                 <a href="Recuperar.php">Esqueceu sua senha?</a><br>
                 <center><br>Cadastre-se<a style="color: aqua" href="cadastro.php"> aqui</a><br></center>
-            </form>
+                                </form>
                            </td>    
                        </tr>
                    </table>

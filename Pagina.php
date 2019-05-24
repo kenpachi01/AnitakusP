@@ -1,11 +1,31 @@
-<html>
-    <head></head>
-    <title> Anitakus</title>
-    <link rel="stylesheet" type="text/css" href="EstiloCSS/pagina.css">
-    </head>
-    <body background="https://img.elo7.com.br/product/zoom/1780575/luminaria-acrilico-led-preenchida-luminaria-com-led.jpg" >
+<html lang="en" >
 
-        <h1 style="color:black;">Anitakus</h1>
-       
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>css3 Responsive menu effect</title>
+  
+  
+  
+  <link rel="stylesheet" href="EstiloCSS/pagina.css">
+
+  
+</head>
+
+<body>
+
+  <h1>Anitakus
+</h1>
+
+<ul class="menu">
+  <li><a href="#" class="active">Ranking</a></li>
+  <li><a href="#">noticias</a></li>
+  <li><a href="#">Assitir animes</a></li>
+  <li><a href="#">perfil</a></li>
+  <li class="slider"></li>
+</ul>
+  
+  
+
+</body>
+
 </html>
