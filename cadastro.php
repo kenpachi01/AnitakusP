@@ -22,7 +22,7 @@
                    <br>
             <tr>
                 <td>
-                  <br>  Sobre Nome: <input type="text" name="sobrenome" size="20"><br>
+                  <br> Nome da mãe: <input type="text" name="sobrenome" size="20"><br>
                 </td>
             </tr>
                    <br>
@@ -40,7 +40,6 @@
             <tr>
         <br><td><INPUT TYPE="RADIO" NAME="sexo" VALUE="Masc">Mas</td>
         <td><INPUT TYPE="RADIO" NAME="sexo" VALUE="Femin">Femin</td>
-            <td><INPUT TYPE="RADIO" NAME="sexo" VALUE="outros">outros</td>
             </tr>   
             <tr>
                 <br>

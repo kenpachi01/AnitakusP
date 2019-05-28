@@ -14,6 +14,7 @@
 <body>
 
   <h1>Anitakus</h1>
+  
 
 <ul class="menu">
     <li><a href="Ranking.php"S>Ranking</a></li>
@@ -23,6 +24,13 @@
   <li class="slider"></li>
 </ul>
   
+  <div style="overflow:scroll;height:80px;width:100%;overflow:auto">
+
+    <table width="800" border="0"  class="my-table">
+    <tr>      </tr>  
+    </table>  
+
+ </div>
 
 </body>
 
