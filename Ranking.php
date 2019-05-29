@@ -34,6 +34,7 @@
                tiranos governantes do reino. Elizabeth, a caçula do rei, sai em uma jornada para encontrar os “Sete Pecados Capitais”,
                e recrutá-los para que possam ajudar a tomar o reino de volta.
                          <br>
+                         <br>
          <INPUT TYPE="RADIO" NAME="ra" VALUE="gostei">gostei
          <INPUT TYPE="RADIO" NAME="ra" VALUE="ñ_gosgei">nao gostei
         </td>
@@ -48,6 +49,7 @@
                  excepcionais, Asta é a única pessoa do mundo todo desprovida desse dom. Aos quinze anos, ambos recebem grimórios - livros mágicos 
                  que amplificam os poderes do detentor. Asta recebe um raro grimório de anti-magia, capaz de negar e repelir os feitiços do oponente. 
                  Dois opostos que nutrem uma rivalidade amigável, Yuno e Asta estão prontos para encarar os mais difíceis desafios para conquistar seu sonho em comum: tornar-se o Rei dos Feiticeiros.
+                             <br>
                              <br>
          <INPUT TYPE="RADIO" NAME="ra" VALUE="gostei">gostei
          <INPUT TYPE="RADIO" NAME="ra" VALUE="ñ_gosgei">nao gostei
@@ -65,6 +67,7 @@
                  com suas mentes. No dia 6 de novembro de 2022, cerca de dez mil jogadores conseguiram comprar uma cópia e entrar pela primeira vez. O fator inesperado era a opção de “deslogar”
                  que não estava disponível. Eles então são informados por Kayaba Akihiko, o criador de SAO, que somente poderão sair ao completarem os cem andares de Aincrad. A história segue então
                  com o protagonista, Kazuto “Kirito” Kirigaya, determinado a ficar cada vez mais forte para completar o jogo.
+                 <br>
                  <br>
          <INPUT TYPE="RADIO" NAME="ra" VALUE="gostei">gostei
          <INPUT TYPE="RADIO" NAME="ra" VALUE="ñ_gosgei">nao gostei

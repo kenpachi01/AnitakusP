@@ -30,8 +30,10 @@ h1 {
         border-left-width: 5px;
         background-color: #EFFBFB;
 }
+
+
 td{
-        border-style: hidden;
+        border-style: solid;
         margin: 1;
         padding: 0px;
         text-align: left;
@@ -113,3 +115,5 @@ li.slider {
   left: 75%;
   background-color: #16a085;
 }
+
+
