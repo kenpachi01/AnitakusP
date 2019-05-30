@@ -1,23 +1,23 @@
 <?php
 include'chama.php';
 
-$nome = $_POST['nome'];
-$sobrenome=$_POST['sobrenome'];
-$email = $_POST['email'];
-$Senha = $_POST['Senha'];
-$Sexo=$_POST['Sexo'];
+$nomeD=$_POST['nome'];
+$sobrenomeD=$_POST['sobrenome'];
+$emailD =$_POST['email'];
+$SenhaD =$_POST['senha'];
+$SexoD=$_POST['sexo'];
 
-$inserir = "INSERT INTO tabela1 (nome,sobrenome, email, Senha, Sexo) VALUES ('$nome','$sobrenome','$email', '$Senha','$Sexo')";
+$inserir = "INSERT INTO tabela1 (nome, sobrenome, email, senha, sexo) VALUES ('$nomeD','$sobrenomeD','$emailD', '$SenhaD','$SexoD')";
 $resultado = mysqli_query($conn, $inserir);
 
 if(mysqli_affected_rows($conn)!= 0){
-    echo "<script type=\"text/javascript\">
-             alert(\"usuario cadastrado com sucesso.\");
+    echo "<script>
+             alert('usuario cadastrado com sucesso.');
           </script>";
     header('location:index.php');
 }else{
-    echo "<script type=\"text/javascript\">
-             alert(\"usuario nÃ£o foi cadastrado com sucesso.\");
+    echo "<script>
+             alert('usuario nÃ£o foi cadastrado com sucesso.');
           </script>";
      header('location:cadastro.php');
 }

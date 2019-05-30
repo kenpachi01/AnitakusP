@@ -22,7 +22,7 @@
                    <br>
             <tr>
                 <td>
-                  <br> Nome da mãe: <input type="text" name="Nome da mãe" size="20"><br>
+                  <br> Nome da mãe: <input type="text" name="sobrenome" size="20"><br>
                 </td>
             </tr>
                    <br>
