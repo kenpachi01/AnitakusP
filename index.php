@@ -18,7 +18,7 @@
                   <table>
                       <tr>
                           <td>
-                              <form aling="right" action="chama.php" method="POST">
+                              <form aling="right" action="cone.php" method="POST">
                 <h2>Login</h2>
                 E-mail<br>
                 <br><input type="text" name="email" placeholder="Digite se e-mail"><br>

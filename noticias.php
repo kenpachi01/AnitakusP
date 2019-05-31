@@ -19,6 +19,7 @@
     <li><a href="Ranking.php">Ranking</a></li>
     <li><a href="noticias.php">noticias</a></li>
     <li><a href="Assistir.php">Assitir animes</a></li>
+   
   <li class="slider"></li>
 </ul>
           <br>

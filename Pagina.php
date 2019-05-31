@@ -3,9 +3,27 @@
 
 <head>
     
+<meta charset="UTF-8">
+        <?php 
+        include'chama.php';
+        
+        session_start();
 
 
-  <meta charset="UTF-8">
+
+        if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
+        {
+            session_unset();
+            session_destroy();
+            echo "<script>
+                alert('Esta página só pode ser acessada por usuário logado');
+                window.location.href = 'index.php';
+                </script>";
+
+        }
+        $logado = $_SESSION['email'];
+        ?>
+
   <title>Pagina inicial</title>
      <link rel="stylesheet" href="EstiloCSS/pagina.css">
 
@@ -13,15 +31,14 @@
 </head>
 
 <body>
-  <form action="chama.php" method="POST">
+  
   <h1>Anitakus</h1>
   
-
 <ul class="menu">
-    <li><a href="Ranking.php"S>Ranking</a></li>
+    <li><a href="Ranking.php">Ranking</a></li>
     <li><a href="noticias.php">noticias</a></li>
     <li><a href="Assistir.php">Assitir animes</a></li>
-    <li><a href="usuarios.php">Usuarios</a></li>
+    <li><a href="usuarios.php">usuario</a></li>
   <li class="slider"></li>
 </ul>
   
@@ -32,7 +49,7 @@
     </table>  
 
  </div>
-</form>
+
 </body>
 
 </html>

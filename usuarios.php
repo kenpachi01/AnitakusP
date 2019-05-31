@@ -1,3 +1,13 @@
+ <?php 
+ include 'chama.php';
+ 
+ $consulta="SELECT * FROM  anitakus";
+ $con = $conn-> query($consulta) or die($conn->erro);
+?>
+
+
+
+
 <html lang="en" >
 
 <head>
@@ -10,19 +20,20 @@
 </head>
 
 <body>
-  <form action="usacon.php" method="POST">
   <h1>Anitakus</h1>
   
 
 <ul class="menu">
-    <li><a href="Ranking.php"S>Ranking</a></li>
+    <li><a href="Pagina.php">inicio</a></li>
+    <li><a href="Ranking.php">Ranking</a></li>
     <li><a href="noticias.php">noticias</a></li>
     <li><a href="Assistir.php">Assitir animes</a></li>
-    <li><a href="perfil.php">perfil</a></li>
+
   <li class="slider"></li>
 </ul>
-  
- <table>
+  <br>
+  <br>
+ <table border='1' aling='center'>
       <tr>
           <td>id</td>
           <td>nome</td>
@@ -39,7 +50,9 @@
           <td><?php echo $dado["Email"]; ?></td>
           <td><?php echo $dado["Senha"]; ?></td>
           <td><?php echo $dado["sexo"]; ?></td>
-      </tr> 
+          <td><a href='editar'>Editar</a> | 
+              <a href='editar'>Exclui</a> </td>
+      </tr>
       <?php }?>
   </table>
 </body>
