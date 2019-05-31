@@ -3,22 +3,7 @@
 
 <head>
     
-        <?php 
-        
-        session_start();
 
-
-        if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
-        {
-            session_unset();
-            echo "<script>
-                alert('Esta página só pode ser acessada por usuário logado');
-                window.location.href = 'index.php';
-                </script>";
-
-        }
-        $logado = $_SESSION['email'];
-        ?>
 
   <meta charset="UTF-8">
   <title>Pagina inicial</title>
@@ -36,7 +21,7 @@
     <li><a href="Ranking.php"S>Ranking</a></li>
     <li><a href="noticias.php">noticias</a></li>
     <li><a href="Assistir.php">Assitir animes</a></li>
-    <li><a href="perfil.php">perfil</a></li>
+    <li><a href="usuarios.php">Usuarios</a></li>
   <li class="slider"></li>
 </ul>
   

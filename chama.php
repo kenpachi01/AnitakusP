@@ -3,7 +3,7 @@
 $nome_servidor="localhost";
 $nome_usuario="root";
 $senha="";
-$nome_banco="Anitakus";
+$nome_banco="Anitakusdb";
 
 $conn=new mysqli($nome_servidor,$nome_usuario,$senha,$nome_banco);
 if ($conn->conect_error===TRUE){
@@ -15,7 +15,7 @@ $Senha = $_POST['senha'];
 
 
 
-$achar = "SELECT * FROM tabela1 WHERE email='$email' AND senha='$Senha'";
+$achar = "SELECT * FROM anitakus WHERE email='$email' AND senha='$Senha'";
 $resultado = $conn->query($achar);
 
 if($resultado->num_rows>0){
