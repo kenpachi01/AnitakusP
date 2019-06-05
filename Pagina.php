@@ -3,8 +3,9 @@
 
 <head>
     
-<meta charset="UTF-8">
+
         <?php 
+        
         include'chama.php';
         
         session_start();
@@ -23,7 +24,8 @@
         }
         $logado = $_SESSION['email'];
         ?>
-
+    
+<meta charset="UTF-8">
   <title>Pagina inicial</title>
      <link rel="stylesheet" href="EstiloCSS/pagina.css">
 

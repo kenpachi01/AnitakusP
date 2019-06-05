@@ -7,7 +7,7 @@ $emailD =$_POST['email'];
 $SenhaD =$_POST['senha'];
 $SexoD=$_POST['sexo'];
 
-$inserir = "INSERT INTO Anitakus (nome, sobrenome, email, senha, sexo) VALUES ('$nomeD','$sobrenomeD','$emailD', '$SenhaD','$SexoD')";
+$inserir = "INSERT INTO anitakus (nome, sobrenome, email, senha, sexo) VALUES ('$nomeD','$sobrenomeD','$emailD', '$SenhaD','$SexoD')";
 $resultado = mysqli_query($conn, $inserir);
 
 if(mysqli_affected_rows($conn)!= 0){

@@ -1,10 +1,10 @@
- <?php 
+<?php 
  include 'chama.php';
  
  $consulta="SELECT * FROM  anitakus";
- $con = $conn-> query($consulta) or die($conn->erro);
+ $sql_query = $conn->query($consulta) or die($conn->erro);
+ $linha = $sql_query-> fetch_assoc();
 ?>
-
 
 
 
@@ -33,7 +33,7 @@
 </ul>
   <br>
   <br>
- <table border='1' aling='center'>
+ <table border='1' style="width:80%" align="center">
       <tr>
           <td>id</td>
           <td>nome</td>
@@ -41,19 +41,23 @@
           <td>email</td>
           <td>senha</td>
           <td>sexo</td>
+          <td>Editar|Exclui</td>
       </tr> 
-      <?php while($dado = $con-> fetch_array()){ ?>
+      <?php
+           do{
+               
+           ?>    
       <tr>
-          <td><?php echo $dado["id"]; ?></td>
-          <td><?php echo $dado["nome"]; ?></td>
-          <td><?php echo $dado["sobreNome"]; ?></td>
-          <td><?php echo $dado["Email"]; ?></td>
-          <td><?php echo $dado["Senha"]; ?></td>
-          <td><?php echo $dado["sexo"]; ?></td>
-          <td><a href='editar'>Editar</a> | 
-              <a href='editar'>Exclui</a> </td>
+          <td><?php echo $linha["id"]; ?></td>
+          <td><?php echo $linha["nome"]; ?></td>
+          <td><?php echo $linha["sobreNome"]; ?></td>
+          <td><?php echo $linha["Email"]; ?></td>
+          <td><?php echo $linha["Senha"]; ?></td>
+          <td><?php echo $linha["sexo"]; ?></td>
+          <td> <a href=" <?php echo "editar.php?id=" . $linha['id'] . "&nome" . $linha['nome']. "&sobreNome" . $linha['sobreNome'] . "&Email" . $linha['Email'] . "&Senha" . $linha['Senha'] . "&sexo" . $linha['sexo'] ?>">editar</a> |
+              <a href=" <?php echo "excluir.php?id=" . $linha['id'] . "&nome" . $linha['nome']. "&sobreNome" . $linha['sobreNome'] . "&Email" . $linha['Email'] . "&Senha" . $linha['Senha'] . "&sexo" . $linha['sexo'] ?>">excluir</a>
       </tr>
-      <?php }?>
+      <?php } while($linha = $sql_query-> fetch_assoc());?>
   </table>
 </body>
 
