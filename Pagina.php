@@ -1,3 +1,10 @@
+<?php 
+ include 'chama.php';
+ 
+ $consulta="SELECT * FROM  anitakus";
+ $sql_query = $conn->query($consulta) or die($conn->erro);
+ $dado = $sql_query-> fetch_assoc();
+?>
 
 <html lang="en" >
 
@@ -44,13 +51,28 @@
   <li class="slider"></li>
 </ul>
   
-  <div style="overflow:scroll;height:80px;width:100%;overflow:auto">
 
-    <table width="800" border="0"  class="my-table">
-    <tr>      </tr>  
+
+       <table style="width:40%" align="center"> 
+        <tr>
+          <td>
+              <h4>Criar publicação</h4> 
+        <center><div><textarea aria-label="Abra seu coração"  placeholder="Abra seu coração"  style="width:300px;height:100px;" ></textarea></div></center>
+             <br>
+        <center><input type="submit" value="Públucar" align="higth"></center>
+             <br>
+          </td>
+        </tr>
+
     </table>  
+         <table style="width:60%;height:100%;" align="center"> 
+        <tr>
+          <td>
+              
+          </td>
+        </tr>
 
- </div>
+    </table>  
 
 </body>
 
