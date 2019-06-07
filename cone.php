@@ -1,7 +1,8 @@
 <?php
+   session_start();
   include'chama.php';
   
-   session_start();
+
   
 $email = $_POST['email'];
 $Senha = $_POST['senha'];
@@ -17,7 +18,7 @@ if($resultado->num_rows>0){
     header('location:Pagina.php');
 }else{
     session_unset();
- 
+    session_destroy();
     echo "<script> 
         alert('Login ou senha incorreto');
         window.location.href = 'index.php';
