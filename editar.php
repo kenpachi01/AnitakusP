@@ -36,7 +36,7 @@
                 <br>
                 Senha: <input type="text" name="senha" value="<?php echo $senha ?>"/><br>
                 <br>
-                Senha: <input type="text" name="sexo" value="<?php echo $sexo ?>"/><br>
+                Sexo: <input type="text" name="sexo" value="<?php echo $sexo ?>"/><br>
                 
                 <br>
                 <center>  <input type="submit" value="Alterar" align="center"></center>
