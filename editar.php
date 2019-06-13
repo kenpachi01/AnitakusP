@@ -35,6 +35,7 @@
         $sexo = filter_input(INPUT_GET, "sexo");
                 
         ?>
+ 
     </head>
     <h1 style="color:black;">Informação de computação</h1>
     <br>
