@@ -1,6 +1,28 @@
 <html lang="en" >
 
 <head>
+            <?php 
+        
+        include'chama.php';
+        
+        session_start();
+
+
+
+        if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
+        {
+            session_unset();
+            session_destroy();
+            echo "<script>
+                alert('Esta página só pode ser acessada por usuário logado');
+                window.location.href = 'index.php';
+                </script>";
+
+        }
+        $logado = $_SESSION['email'];
+        ?>
+    
+    
   <meta charset="UTF-8">
   <title>Pagina inicial</title>
   

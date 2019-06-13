@@ -1,5 +1,27 @@
 <html>
     <head>
+                <?php 
+        
+        include'chama.php';
+        
+        session_start();
+
+
+
+        if((!isset($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
+        {
+            session_unset();
+            session_destroy();
+            echo "<script>
+                alert('Esta página só pode ser acessada por usuário logado');
+                window.location.href = 'index.php';
+                </script>";
+
+        }
+        $logado = $_SESSION['email'];
+        ?>
+        
+        
         <meta charset="UTF-8">
  <title> Editar</title>
  <link rel="stylesheet" type="text/css" href="EstiloCSS/edi.css">
@@ -17,7 +39,7 @@
     <h1 style="color:black;">Informação de computação</h1>
     <br>
     <br>
-    <body background="http://infoteam.com.br/wp-content/uploads/2017/08/Montagem-e-Manuten%C3%A7%C3%A3o-de-Computadores.jpg">
+    <body background="https://occ-0-990-987.1.nflxso.net/art/b9312/a13b4ee78ab997c838a799576420f140833b9312.jpg">
         <center>
         <table  align="center"> 
         <tr>

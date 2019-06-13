@@ -38,9 +38,9 @@
                 </td>
             </tr>
             <tr>
-        <br><td><INPUT TYPE="RADIO" NAME="sexo" VALUE="Masc">Mas
+       <br><td><INPUT TYPE="RADIO" NAME="sexo" VALUE="Masc">Mas
         <INPUT TYPE="RADIO" NAME="sexo" VALUE="Femin" aling="center">Femin
-        <INPUT TYPE="RADIO" NAME="sexo" VALUE="outros" >Outros</td><br>
+        <INPUT TYPE="RADIO" NAME="sexo" VALUE="outros" >Outros</td><br> 
             </tr>   
             <tr>
                 <br>

@@ -1,7 +1,8 @@
 <?php
-   session_start();
+
   include'chama.php';
   
+  session_start();
 
   
 $email = $_POST['email'];
